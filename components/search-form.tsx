@@ -44,7 +44,7 @@ const SearchForm = ({ className }: SearchFormProps) => {
             }
           }}
         />
-        <span className="text-xl ml-2">.vercel.app</span>
+        <span className="text-lg lg:text-xl ml-2">.vercel.app</span>
         {isAvailable !== null &&
           (isAvailable ? (
             <span className="bg-green-200 text-xs font-medium whitespace-nowrap px-1 py-0.5 rounded-lg text-foreground absolute -bottom-7">
