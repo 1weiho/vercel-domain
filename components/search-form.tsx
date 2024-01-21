@@ -18,6 +18,7 @@ const SearchForm = ({ className }: SearchFormProps) => {
   const [isAvailable, setIsAvailable] = useState<boolean | null>(null);
 
   const handleSubmit = async () => {
+    setIsAvailable(null);
     if (!searchAppName) {
       toast.error('Please enter app name');
       return;
