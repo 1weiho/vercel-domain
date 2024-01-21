@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 import { Toaster } from 'sonner';
 import './globals.css';
 import BackgroundGrid from '@/components/background-grid';
+import { Analytics } from '@vercel/analytics/react';
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -22,6 +23,7 @@ export default function RootLayout({
           <BackgroundGrid className="absolute inset-0 opacity-50" />
         </div>
         <Toaster />
+        <Analytics />
       </body>
     </html>
   );
