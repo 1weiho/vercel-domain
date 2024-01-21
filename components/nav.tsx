@@ -18,9 +18,9 @@ const Nav = () => {
           <Twitter className="h-6 w-6" />
         </Link>
       </Button>
-      <Button size="icon" variant="ghost">
+      {/* <Button size="icon" variant="ghost">
         <Moon className="h-6 w-6" />
-      </Button>
+      </Button> */}
     </nav>
   );
 };
