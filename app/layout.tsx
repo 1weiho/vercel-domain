@@ -4,6 +4,7 @@ import { Toaster } from 'sonner';
 import './globals.css';
 import BackgroundGrid from '@/components/background-grid';
 import { Analytics } from '@vercel/analytics/react';
+import BackgroundGridMobile from '@/components/background-grid-mobile';
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -28,6 +29,9 @@ export default function RootLayout({
         <div className="z-10 relative">{children}</div>
         <div className="md:block hidden fixed inset-0 pointer-events-none">
           <BackgroundGrid className="absolute inset-0 opacity-50" />
+        </div>
+        <div className="md:hidden block fixed inset-0 pointer-events-none">
+          <BackgroundGridMobile className="absolute inset-0 opacity-50" />
         </div>
         <Toaster />
         <Analytics />
