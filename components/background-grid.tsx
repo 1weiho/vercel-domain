@@ -46,8 +46,8 @@ const BackgroundGrid = ({ className }: BackgroundGridProps) => (
         gradientUnits="userSpaceOnUse"
         gradientTransform="translate(600 380) rotate(90) scale(380 600)"
       >
-        <stop stop-color="white" stop-opacity="0" />
-        <stop offset="1" stop-color="white" />
+        <stop stopColor="white" stopOpacity="0" />
+        <stop offset="1" stopColor="white" />
       </radialGradient>
     </defs>
   </svg>
