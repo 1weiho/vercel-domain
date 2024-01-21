@@ -26,6 +26,15 @@ const SearchForm = ({ className }: SearchFormProps) => {
     try {
       const result = await checkDomainExist(searchAppName);
       setIsAvailable(!result);
+      if (!result) {
+        toast.success('Available', {
+          description: `https://${searchAppName}.vercel.app is available to use.`,
+        });
+      } else {
+        toast.error('Unavailable', {
+          description: `https://${searchAppName}.vercel.app is unavailable to use.`,
+        });
+      }
     } catch (error) {
       toast.error('Something went wrong');
     }
