@@ -3,6 +3,8 @@ import SearchForm from '@/components/search-form';
 import VercelLogo from '@/components/vercel-logo';
 import { Metadata } from 'next';
 
+export const runtime = 'edge';
+
 export const metadata: Metadata = {
   metadataBase: new URL('https://vercel-domain.vercel.app/'),
   title: 'Vercel Domain Checker',
