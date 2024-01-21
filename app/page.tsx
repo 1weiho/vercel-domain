@@ -20,13 +20,15 @@ export const metadata: Metadata = {
 
 const Home = () => {
   return (
-    <main className="flex flex-col items-center">
+    <main className="flex flex-col h-dvh items-center">
       <Nav />
-      <VercelLogo className="h-16 w-16 mt-40 lg:mt-72" />
-      <h1 className="text-2xl lg:text-3xl font-bold mt-4">
-        Vercel Domain Checker
-      </h1>
-      <SearchForm className="mt-6" />
+      <div className="flex flex-col items-center min-h-0 grow justify-center">
+        <VercelLogo className="h-16 w-16 -mt-16" />
+        <h1 className="text-2xl lg:text-3xl font-bold mt-4">
+          Vercel Domain Checker
+        </h1>
+        <SearchForm className="mt-6" />
+      </div>
     </main>
   );
 };
