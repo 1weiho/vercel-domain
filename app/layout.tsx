@@ -2,6 +2,7 @@ import { GeistSans } from 'geist/font/sans';
 import type { Metadata } from 'next';
 import { Toaster } from 'sonner';
 import './globals.css';
+import BackgroundGrid from '@/components/background-grid';
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -16,7 +17,10 @@ export default function RootLayout({
   return (
     <html lang="en" className={GeistSans.className}>
       <body>
-        {children}
+        <div className="z-10 relative">{children}</div>
+        <div className="md:block hidden fixed inset-0 pointer-events-none">
+          <BackgroundGrid className="absolute inset-0 opacity-50" />
+        </div>
         <Toaster />
       </body>
     </html>

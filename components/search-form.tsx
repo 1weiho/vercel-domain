@@ -43,6 +43,7 @@ const SearchForm = ({ className }: SearchFormProps) => {
               handleSubmit();
             }
           }}
+          className="bg-white"
         />
         <span className="text-lg lg:text-xl ml-2">.vercel.app</span>
         {isAvailable !== null &&
